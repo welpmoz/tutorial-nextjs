@@ -1,4 +1,6 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
+// Usando la librería clsx para darle estilos diferentes a las
+// condiciones
 import clsx from 'clsx';
 
 export default function InvoiceStatus({ status }: { status: string }) {

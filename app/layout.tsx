@@ -1,3 +1,6 @@
+import '@/app/ui/global.css';
+import { inter } from './ui/invoices/fonts';
+
 export default function RootLayout({
   children,
 }: {
@@ -5,7 +8,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      {/* La fuente se aplicara en toda la aplicacion */}
+      <body
+        className={`${inter.className} antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
